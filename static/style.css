@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Serif+Khitan+Small+Script&family=Nunito:ital,wght@0,323;1,323&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    height:100%;
+    width:100%;
+    background:linear-gradient(to top, #DA4453, #89216b);
+    display:flex;
+    flex-direction:row;
+}
+.dad{
+    height:100%;
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    /*background-color:red;*/
+    gap:5%;
+}
+.box{
+    width:70%;
+    height:70%;
+    border-radius:20px;
+    background-color:bisque;
+}
+.box .box-top{
+    width:100%;
+    height:22%;
+    text-align:center;
+    line-height:6vw;
+}
+.box .box-top h1{
+    font-size:3vw;
+}
+.box .box-bottom{
+    width:96%;
+    height:73.5%;
+    padding:2%;
+    text-align:center;
+    position:relative;
+}
+.box .box-bottom p{
+    font-size:2.5vw;
+    color:black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.dad .react{
+    width:70%;
+    height:12%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20%;
+}
+.dad .react h1{
+    font-size:5vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.dad .react h1 img{
+    width:4vw;
+    height:4vw;
+}
+.emo{
+    width:50%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:10%;
+}
+.emo .laughing{
+    width:45%;
+    height:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.emo .laughing .eyes{
+    display:flex;
+    position:relative;
+}
+.emo .laughing h1{
+    font-size:20vw;
+   animation: move 1s linear 0.2s infinite alternate;
+}
+.emo button{
+    padding:2% 3%;
+    background-color:bisque;
+    color:black;
+    font-size:2vw;
+    border-radius:10px;
+    border:none;
+}
+.emo button:hover{
+  opacity:0.8;
+}
+@media (max-width : 600px){
+    body{
+        flex-direction:column;
+    }
+    .dad{
+        width:100%;
+        height:50%;
+        justify-content:center;
+        align-items:center;
+        gap:8%;
+    }
+    .box{
+        width:70%;
+        height:70%;
+    }
+    .box .box-top{
+        line-height:14vw;
+    }
+    .box .box-top h1{
+        font-size:6vw;
+    }
+    .box .box-bottom p{
+        font-size:4.5vw;
+    }
+    .dad .react h1{
+        font-size:14vw;
+    }
+    .dad .react h1 img{
+        width:12vw;
+        height:12vw;
+    }
+    .emo{
+        width:100%;
+        height:50%;
+    }
+    .emo .laughing h1{
+        font-size:40vw;
+    }
+    .emo button{
+        padding:3% 6%;
+        font-size:5vw;
+        font-weight:bold;
+    }
+}
+@keyframes move{
+    0%{
+        transform:translateY(0%);
+    }
+    30%{
+        transform:translateY(5%);
+    }
+    60%{
+        transform:translateY(-5%);
+    }
+    100%{
+        transform:translateY(0%);
+    }
+}
+
